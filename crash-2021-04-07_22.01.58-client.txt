@@ -1,0 +1,598 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 4/7/21 10:01 PM
+Description: Rendering overlay
+
+net.minecraftforge.fml.ModLoadingException: Environmental (environmental) encountered an error during the done event phase
+§7java.lang.StringIndexOutOfBoundsException: String index out of range: -4
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:124) ~[?:36.1] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:326) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader$$Lambda$18484/1045834293.accept(Unknown Source) ~[?:?] {}
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:229) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:326) ~[?:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.onModelBake(ForgeHooksClient.java:324) ~[?:?] {re:classloading}
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:73) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:20) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?] {re:classloading,re:mixin}
+	at net.minecraft.client.resources.ReloadListener$$Lambda$18958/263559372.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:656) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.client.renderer.texture.TextureManager$$Lambda$22356/2024001046.execute(Unknown Source) ~[?:?] {}
+	at com.mojang.blaze3d.systems.RenderSystem.replayQueue(SourceFile:116) ~[?:?] {re:mixin,re:classloading}
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(SourceFile:103) ~[?:?] {re:mixin,re:classloading}
+	at net.minecraft.client.MainWindow.func_227802_e_(MainWindow.java:398) ~[?:?] {re:classloading,xf:OptiFine:default}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:996) [?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:607) [?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) [?:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) [forge-1.16.5-36.1.4.jar:36.1] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$477/1289292854.call(Unknown Source) [forge-1.16.5-36.1.4.jar:36.1] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?] {re:classloading}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?] {re:classloading}
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -4
+	at java.lang.String.substring(String.java:1955) ~[?:1.8.0_51] {}
+	at com.minecraftabnormals.environmental.client.model.SlabfishBucketModel$Overrides.<init>(SlabfishBucketModel.java:87) ~[?:1.0.0] {re:classloading}
+	at com.minecraftabnormals.environmental.client.model.SlabfishBucketModel$Overrides.<init>(SlabfishBucketModel.java:75) ~[?:1.0.0] {re:classloading}
+	at com.minecraftabnormals.environmental.client.model.SlabfishBucketModel.<init>(SlabfishBucketModel.java:37) ~[?:1.0.0] {re:classloading}
+	at com.minecraftabnormals.environmental.core.registry.EnvironmentalClientRegistry.onEvent(EnvironmentalClientRegistry.java:47) ~[?:1.0.0] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.eventbus.ASMEventHandler_1135_EnvironmentalClientRegistry_onEvent_ModelBakeEvent.invoke(.dynamic) ~[?:?] {}
+	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus$$Lambda$2545/1360277447.invoke(Unknown Source) ~[?:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283) ~[eventbus-4.0.0.jar:?] {}
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120) ~[?:36.1] {re:classloading}
+	... 151 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:124) ~[?:36.1] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.lambda$postEvent$34(ModLoader.java:326) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader$$Lambda$18484/1045834293.accept(Unknown Source) ~[?:?] {}
+	at java.util.HashMap.forEach(HashMap.java:1280) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.ModList.forEachModContainer(ModList.java:229) ~[?:?] {re:classloading}
+	at net.minecraftforge.fml.ModLoader.postEvent(ModLoader.java:326) ~[?:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.onModelBake(ForgeHooksClient.java:324) ~[?:?] {re:classloading}
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:73) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.model.ModelManager.func_212853_a_(ModelManager.java:20) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.ReloadListener.func_215269_a(SourceFile:13) ~[?:?] {re:classloading,re:mixin}
+	at net.minecraft.client.resources.ReloadListener$$Lambda$18958/263559372.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:656) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.resources.AsyncReloader.func_219557_a(SourceFile:71) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$19188/2120088901.run(Unknown Source) ~[?:?] {}
+	at net.minecraft.util.concurrent.ThreadTaskExecutor.execute(ThreadTaskExecutor.java:106) ~[?:?] {re:mixin,pl:accesstransformer:B,re:computing_frames,pl:accesstransformer:B,xf:OptiFine:default,re:classloading,pl:accesstransformer:B,xf:OptiFine:default}
+	at net.minecraft.resources.AsyncReloader.func_219560_a(SourceFile:70) ~[?:?] {re:classloading}
+	at net.minecraft.resources.AsyncReloader$$Lambda$18943/291967192.execute(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:653) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:561) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:635) ~[?:1.8.0_51] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442) ~[?:1.8.0_51] {}
+	at net.minecraft.client.renderer.texture.TextureManager$$Lambda$22356/2024001046.execute(Unknown Source) ~[?:?] {}
+	at com.mojang.blaze3d.systems.RenderSystem.replayQueue(SourceFile:116) ~[?:?] {re:mixin,re:classloading}
+	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(SourceFile:103) ~[?:?] {re:mixin,re:classloading}
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.ResourceLoadProgressGui
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.func_195458_a(GameRenderer.java:807) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,xf:OptiFine:default,xf:fml:fairylights:GameRendererTransformer}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:976) [?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:607) [?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) [?:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51] {}
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) [forge-1.16.5-36.1.4.jar:36.1] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$477/1289292854.call(Unknown Source) [forge-1.16.5-36.1.4.jar:36.1] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.9.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?] {re:classloading}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?] {re:classloading}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 705681064 bytes (672 MB) / 4987027456 bytes (4756 MB) up to 8411152384 bytes (8021 MB)
+	CPUs: 4
+	JVM Flags: 5 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx9024m -Xms256m -XX:PermSize=256m
+	ModLauncher: 8.0.9+86+master.3cf110c
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.2.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.1.4.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.1.4.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.1.4.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.1.4.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.2.jar mixin TRANSFORMATIONSERVICE 
+		/OptiFine_1.16.5_HD_U_G7.jar OptiFine TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.1.4.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.1
+	Forge: net.minecraftforge:36.1.4
+	FML Language Providers: 
+		javafml@36.1
+		minecraft@1
+	Mod List: 
+		infernal-expansion-forge-1.3.jar                  |Infernal Expansion            |infernalexp                   |Release 1.3         |DONE      |NOSIGNATURE
+		CraftingAutomat-MC1.16.3-1.2.2.jar                |Crafting Automat              |craftingautomat               |1.2.2               |DONE      |NOSIGNATURE
+		Uppers-0.3.2.jar                                  |Uppers                        |uppers                        |0.3.2               |DONE      |NOSIGNATURE
+		mcw-windows-1.0.3-mc1.16.5.jar                    |Macaw's Windows               |mcwwindows                    |1.0.3               |DONE      |NOSIGNATURE
+		torohealth-1.16.4-forge-4.jar                     |ToroHealth                    |torohealth                    |NONE                |DONE      |NOSIGNATURE
+		ForgeEndertech-1.16.4-7.1.0.0-build.0075.jar      |Forge Endertech               |forgeendertech                |7.1.0.0             |DONE      |NOSIGNATURE
+		farmersdelightintegrations-1.16.5-1.1.jar         |Farmer's Delight Compats      |farmersdelightintegrations    |1.16.5-1.1          |DONE      |NOSIGNATURE
+		YungsApi-1.16.4-Forge-6.jar                       |YUNG's API                    |yungsapi                      |1.16.4-Forge-6      |DONE      |NOSIGNATURE
+		guardvillagers-1.16.5.1.2.2.jar                   |Guard Villagers               |guardvillagers                |1.2.2               |DONE      |NOSIGNATURE
+		PickUpNotifier-v1.2-1.16.3.jar                    |Pick Up Notifier              |pickupnotifier                |1.2                 |DONE      |d3:cc:6f:1b:30:87:fa:d9:8f:91:15:20:27:63:95:aa:d5:cb:1b:5b:e6:36:cc:57:20:a9:b3:d4:d5:1a:5d:b8
+		Omni-1.16.4-1.2.1.jar                             |Omni                          |omni                          |version             |DONE      |NOSIGNATURE
+		WaterStrainer-1.16.3-10.0.0.jar                   |Water Strainer                |waterstrainer                 |1.16.3-10.0.0       |DONE      |NOSIGNATURE
+		SnowRealMagic-1.16.4-2.5.3.jar                    |Snow! Real Magic!             |snowrealmagic                 |2.5.3               |DONE      |NOSIGNATURE
+		supplementaries-1.16.5-0.11.0b.jar                |Supplementaries               |supplementaries               |1.16.5-0.11.0       |DONE      |NOSIGNATURE
+		betterendforge-1.16.4-1.5.1.jar                   |BetterEnd Forge               |betterendforge                |1.16.4-1.5.1        |DONE      |NOSIGNATURE
+		Upgraded Netherite 1.16.4 - 1.8.1.jar             |Upgraded Netherite            |upgradednetherite             |1.7.0               |DONE      |NOSIGNATURE
+		BetterHorseArmor-1.16.3-1.0.1.1.jar               |Better Horse Armor            |betterhorsearmor              |1.16.3-1.0.1.1      |DONE      |NOSIGNATURE
+		structure_gel-1.16.5-1.7.6.jar                    |Structure Gel API             |structure_gel                 |1.7.6               |DONE      |NOSIGNATURE
+		AdvCombatRedo-1.2.2.jar                           |Alez's Combat Upgrades        |advcombatredo                 |1.2.2               |DONE      |NOSIGNATURE
+		fairylights-4.0.5-1.16.5.jar                      |Fairy Lights                  |fairylights                   |4.0.5               |DONE      |NOSIGNATURE
+		EinsteinsLibrary-1.5_MC1.16.5.jar                 |Einstein's Library            |einsteins_library             |1.5                 |DONE      |NOSIGNATURE
+		curios-forge-1.16.5-4.0.5.0.jar                   |Curios API                    |curios                        |1.16.5-4.0.5.0      |DONE      |NOSIGNATURE
+		extlights-3.3.jar                                 |Extended Lights               |extlights                     |3.3                 |DONE      |NOSIGNATURE
+		antiquewaystones-1.1.jar                          |Antique Waystones             |antiquewaystones              |1.1                 |DONE      |NOSIGNATURE
+		sapience-1.16.4-1.1.1.jar                         |Sapience                      |sapience                      |1.1.1               |DONE      |NOSIGNATURE
+		MarketCrates-1.16.4-35.1.4-v1.1-universal.jar     |Market Crates                 |marketcrates                  |v1.1-universal      |DONE      |NOSIGNATURE
+		furniture-7.0.0-pre19-1.16.3.jar                  |MrCrayfish's Furniture Mod    |cfm                           |7.0.0-pre19         |DONE      |NOSIGNATURE
+		Chimes-1.16.5-0.9.5.jar                           |Chimes                        |chimes                        |0.9.5               |DONE      |NOSIGNATURE
+		ItemPhysic_v1.4.17_mc1.16.5.jar                   |ItemPhysic                    |itemphysic                    |1.6.0               |DONE      |NOSIGNATURE
+		cloth-config-4.11.19-forge.jar                    |Cloth Config v4 API           |cloth-config                  |4.11.19             |DONE      |NOSIGNATURE
+		FallingTree-Forge-1.16.5-2.11.0.jar               |Falling Tree                  |fallingtree                   |2.11.0              |DONE      |NOSIGNATURE
+		bettas-1.2.1.jar                                  |Bettas                        |bettas                        |1.2.1               |DONE      |NOSIGNATURE
+		switchbow-1.7.jar                                 |Switch-Bow                    |switchbow                     |1.7                 |DONE      |NOSIGNATURE
+		CleanView-1.16.5-v1a.jar                          |CleanView                     |cleanview                     |1.16.5-v1a          |DONE      |5e:ed:25:99:e4:44:14:c0:dd:89:c1:a9:4c:10:b5:0d:e4:b1:52:50:45:82:13:d8:d0:32:89:67:56:57:01:53
+		BetterMineshafts-Forge-1.16.4-2.0.3.jar           |YUNG's Better Mineshafts      |bettermineshafts              |1.16.4-2.0.3        |DONE      |NOSIGNATURE
+		DarkPaintings-1.16.5-6.0.1.jar                    |DarkPaintings                 |darkpaintings                 |6.0.1               |DONE      |eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		SaveMyStronghold-1.16.4-1.0.jar                   |Save My Stronghold!           |savemystronghold              |1.16.4-1.0          |DONE      |NOSIGNATURE
+		Kiwi-1.16.5-3.4.2.jar                             |Kiwi                          |kiwi                          |3.4.2               |DONE      |NOSIGNATURE
+		mowziesmobs-1.5.15.jar                            |Mowzie's Mobs                 |mowziesmobs                   |1.5.15              |DONE      |NOSIGNATURE
+		torchslabmod-1.16.4_v1.6.18.jar                   |Torch Slab Mod                |torchslabmod                  |1.6.18              |DONE      |NOSIGNATURE
+		connectiblechains-1.0.jar                         |Connectible Chains            |connectiblechains             |1.0                 |DONE      |NOSIGNATURE
+		vanillaexcavators-1.16.2-2.1.3.jar                |Vanilla Excavators            |vanillaexcavators             |2.1.3               |DONE      |NOSIGNATURE
+		Bountiful Baubles FORGE-1.16.3-0.0.2.jar          |Bountiful Baubles             |bountifulbaubles              |NONE                |DONE      |NOSIGNATURE
+		jei-1.16.5-7.6.1.75.jar                           |Just Enough Items             |jei                           |7.6.1.75            |DONE      |NOSIGNATURE
+		differentiate-1.16.5-0.3.3.jar                    |Differentiate                 |differentiate                 |0.3.3               |DONE      |NOSIGNATURE
+		addendum-1.16.5-1.3.0.jar                         |Addendum                      |addendum                      |1.3.0               |DONE      |NOSIGNATURE
+		caelus-forge-1.16.5-2.1.3.0.jar                   |Caelus API                    |caelus                        |1.16.5-2.1.3.0      |DONE      |NOSIGNATURE
+		SneakyMagic-v1.3.2-1.16.5.jar                     |Sneaky Magic                  |sneakymagic                   |1.3.2               |DONE      |9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		NaturesCompass-1.16.5-1.8.6.jar                   |Nature's Compass              |naturescompass                |1.16.5-1.8.6        |DONE      |NOSIGNATURE
+		1.16.5-additionalbars-2.0.2.jar                   |Additional Bars               |additionalbars                |2.0.2               |DONE      |NOSIGNATURE
+		fantasy-forge-1.1.1.jar                           |Fantasy Mounts                |fantasy                       |1.0                 |DONE      |NOSIGNATURE
+		snowundertrees-1.16.5-v1.1.4.jar                  |Snow Under Trees              |snowundertrees                |v1.1.4              |DONE      |NOSIGNATURE
+		bettershears-1.16.4-2020_1.0.3_RELEASE.jar        |BetterShears                  |bettershears                  |1.15.2-2020_1.0.3_RE|DONE      |NOSIGNATURE
+		additional_lights-1.16.4-2.1.3.jar                |Additional Lights             |additional_lights             |2.1.3               |DONE      |NOSIGNATURE
+		forge-1.16.5-36.1.4-universal.jar                 |Forge                         |forge                         |36.1.4              |DONE      |22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		XPCoins(FORGE-1.16.4)vrs1.0.4.jar                 |XP Coins                      |xpcoins                       |1.16.4-1.0.4        |DONE      |NOSIGNATURE
+		DynamicSurroundings-1.16.4-4.0.4.1.jar            |§3Dynamic Surroundings        |dsurround                     |1.16.4-4.0.4.1      |DONE      |b4:98:14:b9:76:55:25:4f:e5:5f:4d:71:90:87:43:5b:f9:d5:3a:02:60:42:5e:da:1f:15:9c:ff:be:a9:7c:77
+		wooltweaks_1.16.5-1.2.jar                         |Wool Tweaks                   |wooltweaks                    |1.2                 |DONE      |NOSIGNATURE
+		antiqueatlas-5.4.4-forge.jar                      |Antique Atlas                 |antiqueatlas                  |5.4.4-forge         |DONE      |NOSIGNATURE
+		forge-1.16.5-36.1.4-client.jar                    |Minecraft                     |minecraft                     |1.16.5              |DONE      |NOSIGNATURE
+		MouseTweaks-2.14-mc1.16.2.jar                     |Mouse Tweaks                  |mousetweaks                   |2.14                |DONE      |NOSIGNATURE
+		fansmod-1.16.5-2.0.1.2.jar                        |Fans Mod                      |fansmod                       |2.0.1.2             |DONE      |NOSIGNATURE
+		morevanillalib-1.16.2-1.2.14.jar                  |MoreVanillaLib                |morevanillalib                |1.2.14              |DONE      |NOSIGNATURE
+		ClassicalArt-1.16.3+-1.1.0.jar                    |Classical Art                 |classicalart                  |1.1.0               |DONE      |NOSIGNATURE
+		shulkersception-1.16-1.0.jar                      |Shulker-sception              |shulkersception               |1.0                 |DONE      |NOSIGNATURE
+		turtlemancy-1.16.5-1.6.3.jar                      |Turtlemancy                   |turtlemancy                   |1.6.3               |DONE      |NOSIGNATURE
+		AdLods-1.16.4-4.1.5.0-build.0096.jar              |Large Ore Deposits            |adlods                        |4.1.5.0             |DONE      |NOSIGNATURE
+		Wither-Proof Block_forge-1.0.3.jar                |Wither-Proof Block Mod        |wpbmod                        |1.0.3               |DONE      |NOSIGNATURE
+		astikorcarts-1.16.5-1.1.1.jar                     |AstikorCarts                  |astikorcarts                  |1.1.1               |DONE      |NOSIGNATURE
+		paintings-1.16.4-7.0.0.1.jar                      |Paintings ++                  |paintings                     |1.16.4-6.0.1.5      |DONE      |NOSIGNATURE
+		pamhc2foodcore-1.16.3-1.0.2.jar                   |Pam's HarvestCraft 2 Food Core|pamhc2foodcore                |version             |DONE      |NOSIGNATURE
+		Fallout_Wasteland_1.16.4_Beta_3.5.8.jar           |Fallout Wastelands            |fallout_wastelands            |Beta 0.5.8          |DONE      |NOSIGNATURE
+		polymorph-forge-1.16.5-0.24.jar                   |Polymorph                     |polymorph                     |1.16.5-0.24         |DONE      |NOSIGNATURE
+		AutoRegLib-1.6-47.jar                             |AutoRegLib                    |autoreglib                    |1.6-47              |DONE      |NOSIGNATURE
+		CompressedBlock1.16.3-v2.1.jar                    |Compressed Block              |compressedblock               |v1.0                |DONE      |NOSIGNATURE
+		structurize-0.13.160-ALPHA-universal.jar          |Structurize                   |structurize                   |0.13.160-ALPHA      |DONE      |NOSIGNATURE
+		FastFurnace-1.16.4-4.4.0.jar                      |FastFurnace                   |fastfurnace                   |4.4.0               |DONE      |NOSIGNATURE
+		AppleSkin-mc1.16.2-forge-1.0.14.jar               |AppleSkin                     |appleskin                     |1.0.14              |DONE      |NOSIGNATURE
+		MagicalTorches-1.16.5-1.0.0.jar                   |Magical Torches               |magical_torches               |1.0.0               |DONE      |NOSIGNATURE
+		connectedglass-1.0.7-mc1.16.4.jar                 |Connected Glass               |connectedglass                |1.0.7               |DONE      |NOSIGNATURE
+		Aquaculture-1.16.5-2.1.16.jar                     |Aquaculture 2                 |aquaculture                   |1.16.5-2.1.16       |DONE      |NOSIGNATURE
+		farmerstea-1.16.5-1.2.jar                         |Farmer's Tea                  |farmerstea                    |1.16.5-1.2          |DONE      |NOSIGNATURE
+		CosmeticArmorReworked-1.16.5-v1b.jar              |CosmeticArmorReworked         |cosmeticarmorreworked         |1.16.5-v1b          |DONE      |5e:ed:25:99:e4:44:14:c0:dd:89:c1:a9:4c:10:b5:0d:e4:b1:52:50:45:82:13:d8:d0:32:89:67:56:57:01:53
+		xptome-1.16.5-v2.1.jar                            |XP Tome                       |xpbook                        |v2.1                |DONE      |NOSIGNATURE
+		CutAndColored-4.0_MC1.16.4.jar                    |Cut And Colored               |cutandcolored                 |4.0                 |DONE      |NOSIGNATURE
+		eidolon-0.2.7.jar                                 |Eidolon                       |eidolon                       |0.2.7               |DONE      |NOSIGNATURE
+		deadlyendphantoms-1.16.4-3.0.0.jar                |Deadly End Phantoms           |deadlyendphantoms             |3.0.0               |DONE      |NOSIGNATURE
+		CookingForBlockheads_1.16.5-9.3.1.jar             |Cooking for Blockheads        |cookingforblockheads          |9.3.1               |DONE      |NOSIGNATURE
+		Placebo-1.16.4-4.4.1.jar                          |Placebo                       |placebo                       |4.4.1               |DONE      |NOSIGNATURE
+		jumpoverfences-1.16.4-1.0.1.jar                   |Jump Over Fences              |jumpoverfences                |1.16.4-1.0.1        |DONE      |NOSIGNATURE
+		citadel-1.6.2.jar                                 |Citadel                       |citadel                       |1.6.2               |DONE      |NOSIGNATURE
+		alexsmobs-1.9.0.jar                               |Alex's Mobs                   |alexsmobs                     |1.9.0               |DONE      |NOSIGNATURE
+		iceandfire-2.1.6-1.16.4.jar                       |Ice and Fire                  |iceandfire                    |2.1.6-1.16.4        |DONE      |NOSIGNATURE
+		MC style paintings 1.16.5.jar                     |minecraft style paintings     |minecraft_style_paintings     |1.0.0               |DONE      |NOSIGNATURE
+		Bookshelf-1.16.5-10.0.7.jar                       |Bookshelf                     |bookshelf                     |10.0.7              |DONE      |eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		BotanyPots-1.16.5-7.0.14.jar                      |BotanyPots                    |botanypots                    |7.0.14              |DONE      |eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		BotanyTrees-1.16.5-3.0.4.jar                      |BotanyTrees                   |botanytrees                   |3.0.4               |DONE      |eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		musketmod-1.16.5-forge-1.2.1.jar                  |Musket Mod                    |musketmod                     |1.2.1               |DONE      |NOSIGNATURE
+		wandering_trapper-1.16.2-0.1.1.jar                |Wandering Trapper             |wandering_trapper             |1.16.2-0.1.0        |DONE      |NOSIGNATURE
+		sophisticatedbackpacks-1.16.4-2.2.8.240.jar       |Sophisticated Backpacks       |sophisticatedbackpacks        |1.16.4-2.2.8.240    |DONE      |NOSIGNATURE
+		pathundergates-1.16.4-2.0.0-release.jar           |Path Under Gates              |pathundergates                |1.16.4-1.0.0-release|DONE      |1d:d7:18:bd:bc:50:11:ed:51:4c:ed:33:84:87:03:ef:79:b3:d3:b2:0b:62:68:ed:ee:48:76:61:89:d3:8a:ba
+		lavasponge-1.0.2-1.16.5.jar                       |LavaSponge                    |lavasponge                    |1.0.2-1.16.5        |DONE      |NOSIGNATURE
+		MmmMmmMmmMmm-1.16.5-1.1.0.jar                     |MmmMmmMmmMmm                  |dummmmmmy                     |1.1.0               |DONE      |NOSIGNATURE
+		LostTrinkets-1.16.5-0.1.27.jar                    |Lost Trinkets                 |losttrinkets                  |0.1.27              |DONE      |NOSIGNATURE
+		despawningeggshatch_1.16.5-2.2.jar                |Despawning Eggs Hatch         |despawningeggshatch           |2.2                 |DONE      |NOSIGNATURE
+		chocolate-1.3.0-1.16.4.jar                        |Chocolate                     |chocolate                     |1.3.0-1.16.4        |DONE      |NOSIGNATURE
+		mcw-bridges-1.0.5-mc1.16.5-4.jar                  |Macaw's Bridges               |mcwbridges                    |1.0.5               |DONE      |NOSIGNATURE
+		FarmersDelight-1.16.3-0.4.0.jar                   |Farmer's Delight              |farmersdelight                |1.16.3-0.4.0        |DONE      |NOSIGNATURE
+		fd_cookbook-1.3.jar                               |Farmers Delight Cookbook      |fd_cookbook                   |1.3                 |DONE      |NOSIGNATURE
+		farmersdelightintegration-1.16.5-1.0.3.jar        |Farmer's Delight Integration  |farmersdelightintegration     |1.16.5-1.0.3        |DONE      |NOSIGNATURE
+		customizableelytra-1.16.4-1.4.2.jar               |Customizable Elytra           |customizableelytra            |1.16.4-1.4.2        |DONE      |NOSIGNATURE
+		Curious Armor Stands-1.16.3-2.0.2.jar             |Curious Armor Stands          |curious_armor_stands          |1.16.3-2.0.2        |DONE      |NOSIGNATURE
+		valhelsia_structures-16.0.5.jar                   |Valhelsia Structures          |valhelsia_structures          |16.0.5              |DONE      |NOSIGNATURE
+		Lollipop-1.16.5-3.2.9.jar                         |Lollipop                      |lollipop                      |3.2.9               |DONE      |NOSIGNATURE
+		mcw-fences-1.0.0-mc1.16.5.jar                     |Macaw's Fences and Walls      |mcwfences                     |1.0.0               |DONE      |NOSIGNATURE
+		skinned_lanterns-1.16.5-1.3.1.jar                 |Skinned Lanterns              |skinnedlanterns               |1.16.5-1.3.1        |DONE      |NOSIGNATURE
+		simplylight-1.16.4-1.1.2.jar                      |Simply Light                  |simplylight                   |1.16.4-1.1.2        |DONE      |NOSIGNATURE
+		CNB-1.16.3_5-1.2.11.jar                           |Creatures and Beasts          |cnb                           |1.2.11              |DONE      |NOSIGNATURE
+		geckolib-forge-1.16.5-3.0.19.jar                  |GeckoLib                      |geckolib3                     |3.0.19              |DONE      |NOSIGNATURE
+		hole_filler_mod-1.2.4.jar                         |Hole Filler Mod               |hole_filler_mod               |1.2.4               |DONE      |NOSIGNATURE
+		Patchouli-1.16.4-50.jar                           |Patchouli                     |patchouli                     |1.16.4-50           |DONE      |NOSIGNATURE
+		ars_nouveau-1.16.4-1.12.5.jar                     |Ars Nouveau                   |ars_nouveau                   |1.12.5              |DONE      |NOSIGNATURE
+		morecharcoal-1.16.4-1.jar                         |More Charcoal                 |morecharcoal                  |1.16.4-1            |DONE      |NOSIGNATURE
+		collective-1.16.5-2.25.jar                        |Collective                    |collective                    |2.25                |DONE      |NOSIGNATURE
+		ExtraSpace+1.0.6+1.16.5.jar                       |extraspace                    |extraspace                    |1.0.6               |DONE      |NOSIGNATURE
+		lottaterracotta-1.16.5-1.3.1.jar                  |Lotta Terracotta              |lottaterracotta               |1.16.5-1.3.1        |DONE      |NOSIGNATURE
+		Gobber2-Forge-1.16.5-2.3.49.jar                   |Gobber 2                      |gobber2                       |2.3.48              |DONE      |NOSIGNATURE
+		extracoals-1.2.jar                                |Extra Coals                   |extracoals                    |1.2                 |DONE      |NOSIGNATURE
+		Desolation+1.0.5b+1.16.5.jar                      |Desolation (Forge)            |desolation                    |1.0.5b              |DONE      |NOSIGNATURE
+		EnigmaticLegacy-2.11.2.jar                        |Enigmatic Legacy              |enigmaticlegacy               |2.11.2              |DONE      |NOSIGNATURE
+		buildersaddition-1.16.5-20210407a.jar             |Builders Crafts & Addition    |buildersaddition              |1.16.5-20210407a    |DONE      |NOSIGNATURE
+		BannerAdditions-1.16.5-1.5.1.jar                  |Banner Additions              |banneradditions               |1.5.1               |DONE      |NOSIGNATURE
+		SpartanWeaponry-1.16.4-2.1.0-beta-3.jar           |Spartan Weaponry              |spartanweaponry               |2.1.0 beta 3        |DONE      |NOSIGNATURE
+		curiouselytra-forge-1.16.5-4.0.2.3.jar            |Curious Elytra                |curiouselytra                 |1.16.5-4.0.2.3      |DONE      |NOSIGNATURE
+		trashcans-1.0.8-mc1.16.4.jar                      |Trash Cans                    |trashcans                     |1.0.8               |DONE      |NOSIGNATURE
+		lotr-1.16-renewed-3.0.jar                         |The Lord of the Rings Mod     |lotr                          |Renewed-3.0         |DONE      |NOSIGNATURE
+		smallships-1.16.5-1.4.0.jar                       |Small Ships Mod               |smallships                    |1.4.0               |DONE      |NOSIGNATURE
+		infinitetrading_1.16.5-1.4.jar                    |Infinite Trading              |infinitetrading               |1.4                 |DONE      |NOSIGNATURE
+		BetterAdvancements-1.16.5-0.1.0.105.jar           |Better Advancements           |betteradvancements            |0.1.0.105           |DONE      |NOSIGNATURE
+		JustMoreCakes-2.0_MC1.16.5.jar                    |Just More Cake!               |jmc                           |2.0                 |DONE      |NOSIGNATURE
+		EUTAA_1.16.5_1.0.1.jar                            |Easy Update Tools And Armors  |easyupdatetoolsandarmors      |1.0.1               |DONE      |NOSIGNATURE
+		EasyMagic-v1.0.2-1.16.5.jar                       |Easy Magic                    |easymagic                     |1.0.2               |DONE      |9a:09:85:98:65:c4:8c:11:c5:49:f6:d6:33:23:39:df:8d:b4:ff:92:84:b8:bd:a5:83:9f:ac:7f:2a:d1:4b:6a
+		the-conjurer-1.16.4-1.0.13.jar                    |The Conjurer                  |conjurer_illager              |1.0.13              |DONE      |NOSIGNATURE
+		Masonry_Blocks_1.16.4_1.0.jar                     |Masonry Blocks                |masonry_blocks                |1.0                 |DONE      |NOSIGNATURE
+		abnormals_core-1.16.5-3.1.1.jar                   |Abnormals Core                |abnormals_core                |3.1.1               |DONE      |NOSIGNATURE
+		environmental-1.16.5-1.0.0.jar                    |Environmental                 |environmental                 |1.0.0               |DONE      |NOSIGNATURE
+		upgrade_aquatic-1.16.5-3.1.0.jar                  |Upgrade Aquatic               |upgrade_aquatic               |3.1.0               |DONE      |NOSIGNATURE
+		Better-Badlands-1.16.5-2.0.3.jar                  |Better Badlands               |better_badlands               |1.16.5-2.0.3        |DONE      |NOSIGNATURE
+		endergetic-1.16.4-3.0.0.jar                       |The Endergetic Expansion      |endergetic                    |3.0.0               |DONE      |NOSIGNATURE
+		personality-1.16.5-1.0.2.jar                      |Personality                   |personality                   |1.0.2               |DONE      |NOSIGNATURE
+		savageandravage-1.16.5-3.1.0.jar                  |Savage & Ravage               |savageandravage               |3.1.0               |DONE      |NOSIGNATURE
+		autumnity-1.16.5-2.1.0.jar                        |Autumnity                     |autumnity                     |2.1.0               |DONE      |NOSIGNATURE
+		buzzier_bees-1.16.5-3.0.1.jar                     |Buzzier Bees                  |buzzier_bees                  |3.0.1               |DONE      |NOSIGNATURE
+		berry_good-1.16.5-4.1.1.jar                       |Berry Good                    |berry_good                    |4.1.1               |DONE      |NOSIGNATURE
+		Enhanced-Mushrooms-1.16.5-3.0.7.jar               |Enhanced Mushrooms            |enhanced_mushrooms            |1.16.5-3.0.7        |DONE      |NOSIGNATURE
+		justmobheads_1.16.5-4.0.jar                       |Just Mob Heads                |justmobheads                  |4.0                 |DONE      |NOSIGNATURE
+		extraboats-1.16.5-2.1.0.jar                       |Extra Boats                   |extraboats                    |2.1.0               |DONE      |NOSIGNATURE
+		create-mc1.16.5_v0.3.1a.jar                       |Create                        |create                        |mc1.16.5_v0.3.1a+128|DONE      |NOSIGNATURE
+		Waystones_1.16.5-7.4.0.jar                        |Waystones                     |waystones                     |7.4.0               |DONE      |NOSIGNATURE
+		goldenhopper-1.1.1-1.16.3.jar                     |Golden Hopper                 |goldenhopper                  |1.1.1               |DONE      |NOSIGNATURE
+		mcw-paintings-1.0.1-mc1.16.5.jar                  |Macaw's Paintings             |mcwpaintings                  |1.0.1               |DONE      |NOSIGNATURE
+		journeymap-1.16.5-5.7.1.jar                       |Journeymap                    |journeymap                    |5.7.1               |DONE      |NOSIGNATURE
+		fakeblocks-1.16.4-1.0.2.jar                       |Fake Blocks                   |fakeblocks                    |1.16.4-1.0.2        |DONE      |NOSIGNATURE
+		comforts-forge-1.16.4-4.0.1.0.jar                 |Comforts                      |comforts                      |1.16.4-4.0.1.0      |DONE      |NOSIGNATURE
+		Artifacts-1.16.5-2.8.3.jar                        |Artifacts                     |artifacts                     |1.16.5-2.8.3        |DONE      |NOSIGNATURE
+		SimpleStorageNetwork-1.16.5-1.3.5.jar             |Simple Storage Network        |storagenetwork                |1.16.5-1.3.5        |DONE      |1f:47:ac:b1:61:82:96:b8:47:19:16:d2:61:81:11:60:3a:06:4b:61:31:56:7d:44:31:1e:0c:6f:22:5b:4c:ed
+		decorative_blocks-1.16.4-1.7.2.jar                |Decorative Blocks             |decorative_blocks             |1.7.2               |DONE      |NOSIGNATURE
+		decorative_blocks_abnormals-1.16.4-1.1.jar        |Decorative Blocks Abnormals   |decorative_blocks_abnormals   |1.1                 |DONE      |NOSIGNATURE
+		DungeonCrawl-1.16.3-2.2.4.jar                     |Dungeon Crawl                 |dungeoncrawl                  |2.2.4               |DONE      |NOSIGNATURE
+		Coins-1.16.5-6.0.2.jar                            |Coins                         |coins                         |6.0.2               |DONE      |eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		TinyMobFarm-1.16.4-1.1.1.jar                      |Tiny Mob Farm                 |tinymobfarm                   |1.1.1               |DONE      |NOSIGNATURE
+		vanillacookbook-1.16.3-1.11.jar                   |Vanilla Cookbook              |vanillacookbook               |1.11                |DONE      |NOSIGNATURE
+		campfiretorches-1.16.3-1.0.3.jar                  |Campfire Torches              |campfiretorches               |1.16.3-1.02         |DONE      |NOSIGNATURE
+		scuba-gear-1.16.5-1.0.3.jar                       |Scuba Gear                    |scuba_gear                    |1.0.3               |DONE      |NOSIGNATURE
+		ADIO-r1.0-2.jar                                   |Ancient Debris In Overworld   |ancient_debris_in_overworld   |1.0.0               |DONE      |NOSIGNATURE
+		EnchantmentDescriptions-1.16.5-7.0.3.jar          |EnchantmentDescriptions       |enchdesc                      |7.0.3               |DONE      |eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		swingthroughgrass-1.16.4-1.5.3.jar                |SwingThroughGrass             |swingthroughgrass             |1.16.4-1.5.3        |DONE      |NOSIGNATURE
+		quiver-2.1-1.16.4.jar                             |Quiver                        |quiver                        |2.1-1.16.4          |DONE      |NOSIGNATURE
+		CreativeCore_v2.1.0_mc1.16.5.jar                  |CreativeCore                  |creativecore                  |2.0.0               |DONE      |NOSIGNATURE
+		forbidden_arcanus-1.16.4-1.0.0.jar                |Forbidden & Arcanus           |forbidden_arcanus             |1.16.4-1.0.0        |DONE      |NOSIGNATURE
+		theurgy-1.16.5-1.0.8.jar                          |Theurgy                       |theurgy                       |1.16.5-1.0.8        |DONE      |NOSIGNATURE
+		smoothboot-forge-1.16.4-1.2.2.jar                 |Smooth Boot                   |smoothboot                    |1.16.4-1.2.2        |DONE      |NOSIGNATURE
+		lepton-1.16.5-1.3.0.jar                           |Lepton                        |lepton                        |1.3.0               |DONE      |NOSIGNATURE
+		leptonleaves-1.0.1.jar                            |Lepton Leaves                 |leptonleaves                  |1.0.1               |DONE      |NOSIGNATURE
+		atmospheric-1.16.5-3.1.0.jar                      |Atmospheric                   |atmospheric                   |3.1.0               |DONE      |NOSIGNATURE
+		easy_villagers-1.16.4-1.1.28.jar                  |Easy Villagers                |easy_villagers                |1.16.4-1.1.28       |DONE      |NOSIGNATURE
+		SpartanShields-1.16.4-2.1.1.jar                   |Spartan Shields               |spartanshields                |2.1.1               |DONE      |NOSIGNATURE
+		Quark-r2.4-310.jar                                |Quark                         |quark                         |r2.4-310            |DONE      |NOSIGNATURE
+		Apotheosis-1.16.3-4.4.1.jar                       |Apotheosis                    |apotheosis                    |4.4.1               |DONE      |NOSIGNATURE
+		charm-forge-1.16.5-2.3.2.jar                      |Charm                         |charm                         |2.3.2               |DONE      |NOSIGNATURE
+		TinyChests-1.4.2.jar                              |Tiny Chests                   |tinychest                     |1.4.2               |DONE      |NOSIGNATURE
+		mobsunscreen-1.16.4-2.1.3.jar                     |Mob Sunscreen                 |mobsunscreen                  |1.16.4-2.1.3        |DONE      |NOSIGNATURE
+		FastWorkbench-1.16.4-4.5.1.jar                    |FastWorkbench                 |fastbench                     |4.5.1               |DONE      |NOSIGNATURE
+		abnormals_delight-1.16.5-1.1.0.jar                |Abnormals Delight             |abnormals_delight             |1.1.0               |DONE      |NOSIGNATURE
+		vanillahammers-1.16.2-2.1.3.jar                   |Vanilla Hammers               |vanillahammers                |2.1.3               |DONE      |NOSIGNATURE
+		simplytea-1.16.5-2.3.4.jar                        |Simply Tea                    |simplytea                     |2.3.4               |DONE      |NOSIGNATURE
+		feudalw-2.2.jar                                   |Feudal Weaponry               |feudalw                       |2.2                 |DONE      |NOSIGNATURE
+		Actually Useful Stonecutter-Alternate-1.0.4 mc 1.1|Actually Useful Stonecutter   |actuallyusefulstonecutter     |1.0.4 mc 1.16.3     |DONE      |NOSIGNATURE
+		betterbedrockgenerator-1.16.4-0.1.1.jar           |Better Bedrock Generator      |betterbedrockgenerator        |0.1.1               |DONE      |NOSIGNATURE
+	Crash Report UUID: 8502bcff-fe7f-40cb-b3da-0b544bf6ca63
+	Kiwi Modules: 
+		kiwi:contributors
+		kiwi:data
+		snowrealmagic:core
+		snowrealmagic:world
+	Patchouli open book context: n/a
+	Launched Version: forge-36.1.4
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Radeon RX 580 Series GL version 4.6.14760 Compatibility Profile Context 21.2.3 27.20.14535.3005, ATI Technologies Inc.
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 4x Intel(R) Core(TM) i3-8350K CPU @ 4.00GHz
+	OptiFine Version: OptiFine_1.16.5_HD_U_G7
+	OptiFine Build: 20210305-003221
+	Render Distance Chunks: 18
+	Mipmaps: 4
+	Anisotropic Filtering: 1
+	Antialiasing: 0
+	Multitexture: false
+	Shaders: null
+	OpenGlVersion: 4.6.14760 Compatibility Profile Context 21.2.3 27.20.14535.3005
+	OpenGlRenderer: Radeon RX 580 Series
+	OpenGlVendor: ATI Technologies Inc.
+	CpuCount: 4 
